@@ -2,7 +2,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 
-int your_conv( cv::Mat src,
+int your_conv( cv::,Mat src
                cv::Mat dst,
                cv::Mat kernel,
                int stride,
@@ -18,9 +18,42 @@ int your_conv( cv::Mat src,
     int dst_height;
     int dst_width;
 
+	for(int i=0; i<src_height ; i+3){
+		for(int j=0; i<src_width ; j++){
+			for(int z=0; z<i<src_height; z++);
+			aa[z][j]=
+
+for(int i=1; i<src_height ; i+3){
+		for(int j=0; i<src_width ; j++){
+			aa[][]=
+for(int i=2; i<src_height ; i+3){
+		for(int j=0; i<src_width ; j++){
+			aa[][]=
     // src.ptr<unsigned char>(i)[ calculate INDEX ]
 
     // MAKE YOUR OWN CONVOLUTION PROCESS
+	int **aa;
+	aa = (int**)malloc(dst_height*sizeof(int*));
+	for(int i=0; i<dst_height; i++){
+		*(aa+i) = (int*)malloc(dst_width*sizeof(int));
+	}
+
+	int pp[dst_height+2*padding][dst_width+2*padding] = {};
+	for(int i=0; i<dst_height; i++){
+		for(int j=0; j<dst_width; j++){
+			padding[i+padding][j+padding] = aa[i][j];
+		}
+	}
+
+	for(int i=0; i<((w-f+2*p)/s)+1; i++){
+		for(int j=0; j<((w-f+2*p)/s)+1; j++){
+			for(int k=0; k<f; k++){
+				for(int l=0; l<f; l++){
+					cc[i][j] +=padding[k+i*s][l+j*s]*bb[l][k];
+				}
+			}
+		}
+	}
 
     // if success
     return 0
